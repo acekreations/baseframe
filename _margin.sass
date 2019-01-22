@@ -1,0 +1,9 @@
+$sets: 0, 1, 2, 3, 4, 5, 6, 7
+$sides: (m, margin), (mt, margin-top), (mr, margin-right), (mb, margin-bottom), (ml, margin-left)
+
+$i: 0
+@each $padding in $sets
+    @each $side, $sideLong in $sides
+        .#{$side}-#{$padding}
+            #{$sideLong}: "#{$i}em"
+    $i: $i + 0.25
