@@ -78,6 +78,20 @@
 
 .ml-7 { margin-left: "1.75em"; }
 
+.m-auto { margin: auto; }
+
+.mt-auto { margin-top: auto; }
+
+.mr-auto { margin-right: auto; }
+
+.mb-auto { margin-bottom: auto; }
+
+.ml-auto { margin-left: auto; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
 .p-0 { padding: "0em"; }
 
 .pt-0 { padding-top: "0em"; }
@@ -157,6 +171,8 @@
 .pb-7 { padding-bottom: "1.75em"; }
 
 .pl-7 { padding-left: "1.75em"; }
+
+.w-auto { width: auto; }
 
 .w-0 { width: "0%"; }
 
@@ -359,6 +375,8 @@
 .w-99 { width: "99%"; }
 
 .w-100 { width: "100%"; }
+
+.h-auto { height: auto; }
 
 .h-0 { height: "0%"; }
 
@@ -639,5 +657,11 @@
 .float-none { float: none; }
 
 .clearfix::after { content: ""; clear: both; display: table; }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-left { text-align: right; }
 
 /*# sourceMappingURL=baseframe.css.map */
