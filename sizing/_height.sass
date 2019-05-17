@@ -4,5 +4,9 @@
 $i: 0
 @while $i <= 100
     .h-#{$i}
-        height: "#{$i}%"
+        height: unquote($i + "%")
+    .h-#{$i}px
+        height: unquote($i + "px")
+    .h-#{$i}vh
+        height: unquote($i + "vh")
     $i: $i + 1

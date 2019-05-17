@@ -5,10 +5,10 @@ $i: 0
     @each $side, $sideProperty in $sides
         //percentage classes
         .#{$side}-#{$i}
-            #{$sideProperty}: "#{$i}%"
+            #{$sideProperty}: unquote($i + "%")
         //pixel classes
         .#{$side}-#{$i}px
-            #{$sideProperty}: "#{$i}px"
+            #{$sideProperty}: unquote($i + "px")
     $i: $i + 1
 
 .m-auto

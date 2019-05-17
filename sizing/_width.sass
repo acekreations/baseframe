@@ -4,5 +4,9 @@
 $i: 0
 @while $i <= 100
     .w-#{$i}
-        width: "#{$i}%"
+        width: unquote($i + "%")
+    .w-#{$i}px
+        width: unquote($i + "px")
+    .w-#{$i}vw
+        width: unquote($i + "vw")
     $i: $i + 1

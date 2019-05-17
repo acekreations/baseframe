@@ -1,0 +1,596 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="baseframe.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono:100,300,400,500,700"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                max-width: 900px;
+                margin: auto;
+                padding-bottom: 100px;
+                font-family: "Roboto Condensed", sans-serif;
+                color: #343434;
+            }
+
+            div {
+                background-color: #fcf0ae;
+            }
+
+            section {
+                border: 2px solid #7c7c7c;
+                margin-bottom: 50px;
+            }
+
+            code {
+                background-color: #eee;
+                padding: 2px 5px;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                font-family: "Roboto Mono", monospace;
+            }
+
+            hr {
+                margin: 60px 0px;
+                border-style: dashed;
+                border-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <img
+            class="h-50px mt-40px mb-60px mx-auto display-block"
+            id="top"
+            src="baseframe-logo.svg"
+            alt="logo"
+        />
+        <hr />
+        <nav class="flex justify-content-around">
+            <a href="#positioning">Positioning</a>
+            <a href="#sizing">Sizing</a>
+            <a href="#spacing">Spacing</a>
+            <a href="#text">Text</a>
+            <a href="#utilities">Utilities</a>
+        </nav>
+        <hr />
+        <h1 id="positioning">Positioning</h1>
+
+        <h2>Flex: Centering</h2>
+        <p>
+            Styling:
+            <code>flex justify-content-center align-items-center</code>
+        </p>
+        <section
+            class="flex justify-content-center align-items-center h-100px w-100"
+        >
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex flex-center</code>
+        </p>
+        <section class="flex flex-center h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+
+        <h2>Flex: Justify</h2>
+        <p>
+            Styling:
+            <code>flex justify-content-start</code>
+        </p>
+        <section class="flex justify-content-start h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex justify-content-end</code>
+        </p>
+        <section class="flex justify-content-end h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex justify-content-between</code>
+        </p>
+        <section class="flex justify-content-between h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex justify-content-around</code>
+        </p>
+        <section class="flex justify-content-around h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+
+        <h2>Flex: Align</h2>
+        <p>
+            Styling:
+            <code>flex align-items-start</code>
+        </p>
+        <section class="flex align-items-start h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex align-items-end</code>
+        </p>
+        <section class="flex align-items-end h-100px w-100">
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+            <div class="w-50px h-50px m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex align-items-baseline</code>
+            (aligns to baseline of text withing child elements)
+        </p>
+        <section class="flex align-items-baseline h-100px w-100">
+            <div class="w-50px h-50px m-10px font-size-8">A</div>
+            <div class="w-50px h-30px m-10px">B</div>
+            <div class="w-50px h-50px m-10px font-size-6">C</div>
+        </section>
+        <p>
+            Styling:
+            <code>flex align-items-stretch</code>
+            (child elements should not have a fixed height for stretch to work)
+        </p>
+        <section class="flex align-items-stretch h-100px w-100">
+            <div class="w-50px m-10px"></div>
+            <div class="w-50px m-10px"></div>
+            <div class="w-50px m-10px"></div>
+        </section>
+
+        <h2>Flex: Direction</h2>
+        <p>
+            Styling:
+            <code>flex flex-direction-row</code>
+        </p>
+        <section class="flex flex-direction-row h-100px w-100">
+            <div class="h-50px w-50px m-10px">1</div>
+            <div class="h-50px w-50px m-10px">2</div>
+            <div class="h-50px w-50px m-10px">3</div>
+        </section>
+        <p>
+            Styling:
+            <code>flex flex-direction-row-reverse</code>
+        </p>
+        <section class="flex flex-direction-row-reverse h-100px w-100">
+            <div class="h-50px w-50px m-10px">1</div>
+            <div class="h-50px w-50px m-10px">2</div>
+            <div class="h-50px w-50px m-10px">3</div>
+        </section>
+        <p>
+            Styling:
+            <code>flex flex-direction-column</code>
+        </p>
+        <section class="flex flex-direction-column w-100">
+            <div class="h-50px w-50px m-10px">1</div>
+            <div class="h-50px w-50px m-10px">2</div>
+            <div class="h-50px w-50px m-10px">3</div>
+        </section>
+        <p>
+            Styling:
+            <code>flex flex-direction-column-reverse</code>
+        </p>
+        <section class="flex flex-direction-column-reverse w-100">
+            <div class="h-50px w-50px m-10px">1</div>
+            <div class="h-50px w-50px m-10px">2</div>
+            <div class="h-50px w-50px m-10px">3</div>
+        </section>
+
+        <h2>Flex: Wrap</h2>
+        <p>
+            Styling:
+            <code>flex flex-wrap</code>
+        </p>
+        <section class="flex flex-wrap w-100">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex flex-nowrap</code>
+            (elements will shrink if necessary)
+        </p>
+        <section class="flex flex-nowrap w-100">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+        </section>
+        <p>
+            Styling:
+            <code>flex flex-wrap-reverse</code>
+        </p>
+        <section class="flex flex-wrap-reverse w-100">
+            <div class="h-50px w-40 m-10px">1</div>
+            <div class="h-50px w-40 m-10px">2</div>
+            <div class="h-50px w-40 m-10px">3</div>
+            <div class="h-50px w-40 m-10px">4</div>
+        </section>
+
+        <h2>Flex: Grow</h2>
+        <p>
+            Styling:
+            <code>flex</code>
+            (flex-grow accepts values of 0-8)
+        </p>
+        <section class="flex w-100">
+            <div class="h-50px flex-grow-1 m-10px">flex-grow-1</div>
+            <div class="h-50px flex-grow-1 m-10px">flex-grow-1</div>
+            <div class="h-50px flex-grow-6 m-10px">flex-grow-6</div>
+        </section>
+
+        <h2>Flex: Shrink</h2>
+        <p>
+            Styling:
+            <code>flex</code>
+            (flex-shrink accepts values of 0-8)
+        </p>
+        <section class="flex w-100">
+            <div class="h-50px w-50 m-10px">flex-shrink-1</div>
+            <div class="h-50px w-50 m-10px">flex-shrink-1</div>
+            <div class="h-50px w-50 flex-shrink-6 m-10px">flex-shrink-6</div>
+        </section>
+
+        <h2>Flex: Align Content</h2>
+        <p>
+            Styling:
+            <code>flex align-content-start</code>
+        </p>
+        <section class="flex align-content-start flex-wrap w-100 h-40">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex align-content-end</code>
+        </p>
+        <section class="flex align-content-end flex-wrap w-100 h-40">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex align-content-center</code>
+        </p>
+        <section class="flex align-content-center flex-wrap w-100 h-40">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex align-content-between</code>
+        </p>
+        <section class="flex align-content-between flex-wrap w-100 h-40">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex align-content-around</code>
+        </p>
+        <section class="flex align-content-around flex-wrap w-100 h-40">
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 m-10px"></div>
+            <div class="h-50px w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <p>
+            Styling:
+            <code>flex align-content-stretch</code>
+        </p>
+        <section class="flex align-content-stretch flex-wrap w-100 h-40">
+            <div class="w-40 m-10px"></div>
+            <div class="w-40 m-10px"></div>
+            <div class="w-40 flex-shrink-6 m-10px"></div>
+        </section>
+
+        <h2>Flex: Align Self</h2>
+        <p>
+            Styling:
+            <code>flex</code>
+        </p>
+        <section class="flex flex-center w-100 h-100px">
+            <div class="h-50px m-10px align-self-start">
+                align-self-start
+            </div>
+            <div class="h-50px m-10px align-self-end">align-self-end</div>
+            <div class="h-50px m-10px align-self-center">align-self-center</div>
+            <div class="h-50px m-10px align-self-baseline">
+                align-self-baseline
+            </div>
+            <div class="m-10px align-self-stretch">
+                align-self-stretch
+            </div>
+        </section>
+
+        <hr />
+        <h1 id="sizing">Sizing</h1>
+
+        <h2>Box Sizing</h2>
+
+        <section class="w-100">
+            <div
+                style="border: 10px solid #7c7c7c"
+                class="h-50px w-30 m-10px box-sizing-border-box"
+            >
+                box-sizing-border-box
+            </div>
+            <div
+                style="border: 10px solid #7c7c7c"
+                class="h-50px w-30 m-10px box-sizing-content-box"
+            >
+                box-sizing-content-box
+            </div>
+        </section>
+
+        <h2>Height</h2>
+        <p>
+            <code>h-50px = height: 50px</code> <code>h-50 = height: 50%</code>
+            <code>h-50vh = height: 50vh</code>
+            <code>h-auto = height: auto</code>
+        </p>
+        <p>Height accepts values 0-100 and auto</p>
+        <section class="w-100">
+            <div class="h-50px w-30 m-10px">
+                h-50px
+            </div>
+            <div class="h-50 w-30 m-10px">
+                h-50
+            </div>
+            <div class="h-50vh w-30 m-10px">
+                h-50vh
+            </div>
+            <div class="h-auto w-30 m-10px">
+                h-auto
+            </div>
+        </section>
+
+        <h2>Width</h2>
+        <p>
+            <code>w-50px = width: 50px</code> <code>w-50 = width: 50%</code>
+            <code>w-50vh = width: 50vw</code> <code>w-auto = width: auto</code>
+        </p>
+        <p>Width accepts values 0-100 and auto</p>
+        <section class="w-100">
+            <div class="h-50px w-50px m-10px">
+                w-50px
+            </div>
+            <div class="h-50px w-50 m-10px">
+                w-50
+            </div>
+            <div class="h-50px w-50vw m-10px">
+                w-50vw
+            </div>
+            <div class="h-50px w-auto m-10px">
+                w-auto
+            </div>
+        </section>
+
+        <hr />
+
+        <h1 id="spacing">Spacing</h1>
+
+        <h2>Margin</h2>
+        <section class="flex">
+            <div class="w-50px h-50px m-10px">m-10px</div>
+            <div class="w-50px h-50px m-10">m-10</div>
+            <div class="w-50px h-50px m-auto">m-auto</div>
+        </section>
+
+        <h2>Margin: Top</h2>
+        <section>
+            <div class="w-50px h-50px mt-10px">mt-10px</div>
+            <div class="w-50px h-50px mt-10">mt-10</div>
+            <div class="w-50px h-50px mt-auto">mt-auto</div>
+        </section>
+
+        <h2>Margin: Right</h2>
+        <section class="flex">
+            <div class="w-50px h-50px mr-10px">mr-10px</div>
+            <div class="w-50px h-50px mr-10">mr-10</div>
+            <div class="w-50px h-50px mr-auto">mr-auto</div>
+        </section>
+
+        <h2>Margin: Bottom</h2>
+        <section>
+            <div class="w-50px h-50px mb-10px">mb-10px</div>
+            <div class="w-50px h-50px mb-10">mb-10</div>
+            <div class="w-50px h-50px mb-auto">mb-auto</div>
+        </section>
+
+        <h2>Margin: Left</h2>
+        <section class="flex">
+            <div class="w-50px h-50px ml-10px">ml-10px</div>
+            <div class="w-50px h-50px ml-10">ml-10</div>
+            <div class="w-50px h-50px ml-auto">ml-auto</div>
+        </section>
+
+        <h2>Padding</h2>
+        <section class="flex">
+            <div class="w-50px h-50px p-10px m-10px">p-10px</div>
+            <div class="w-50px h-50px p-10 m-10px">p-10</div>
+        </section>
+
+        <h2>Padding: Top</h2>
+        <section>
+            <div class="w-50px h-50px pt-10px m-10px">pt-10px</div>
+            <div class="w-50px h-50px pt-10 m-10px">pt-10</div>
+        </section>
+
+        <h2>Padding: Right</h2>
+        <section class="flex">
+            <div class="w-50px h-50px pr-10px m-10px">pr-10px</div>
+            <div class="w-50px h-50px pr-10 m-10px">pr-10</div>
+        </section>
+
+        <h2>Padding: Bottom</h2>
+        <section>
+            <div class="w-50px h-50px pb-10px m-10px">pb-10px</div>
+            <div class="w-50px h-50px pb-10 m-10px">pb-10</div>
+        </section>
+
+        <h2>Padding: Left</h2>
+        <section class="flex">
+            <div class="w-50px h-50px pl-10px m-10px">pl-10px</div>
+            <div class="w-50px h-50px pl-10 m-10px">pl-10</div>
+        </section>
+
+        <hr />
+
+        <h1 id="text">Text</h1>
+
+        <h2>Align</h2>
+
+        <section>
+            <p class="text-right"><code>text-right</code></p>
+            <p class="text-center"><code>text-center</code></p>
+            <p class="text-left"><code>text-left</code></p>
+        </section>
+
+        <h2>Decoration</h2>
+
+        <section>
+            <p class="text-decoration-overline">
+                <code>text-decoration-overline</code>
+            </p>
+            <p class="text-decoration-underline">
+                <code>text-decoration-underline</code>
+            </p>
+            <p class="text-decoration-line-through">
+                <code>text-decoration-line-through</code>
+            </p>
+            <p class="text-decoration-over-under">
+                <code>text-decoration-over-under</code>
+            </p>
+            <p class="text-decoration-none">
+                <code>text-decoration-none</code>
+            </p>
+        </section>
+
+        <h2>Size</h2>
+        <p>
+            The <code>font-size</code> class takes a value from 1-12. Each
+            increment increases the font size 0.25em.
+            <code>font-size-1</code> starts at 0.25em and
+            <code>font-size-12</code> ends at 3em.
+        </p>
+        <section>
+            <p class="font-size-1">
+                <code>font-size-1</code>
+            </p>
+            <p class="font-size-2">
+                <code>font-size-2</code>
+            </p>
+            <p class="font-size-3">
+                <code>font-size-3</code>
+            </p>
+            <p class="font-size-4">
+                <code>font-size-4</code>
+            </p>
+            <p class="font-size-5">
+                <code>font-size-6</code>
+            </p>
+            <p class="font-size-7">
+                <code>font-size-7</code>
+            </p>
+            <p class="font-size-8">
+                <code>font-size-8</code>
+            </p>
+            <p class="font-size-9">
+                <code>font-size-9</code>
+            </p>
+            <p class="font-size-10">
+                <code>font-size-10</code>
+            </p>
+            <p class="font-size-11">
+                <code>font-size-11</code>
+            </p>
+            <p class="font-size-12">
+                <code>font-size-12</code>
+            </p>
+        </section>
+
+        <h2>Transformation</h2>
+
+        <section>
+            <p class="text-lowercase"><code>Text-Lowercase</code></p>
+            <p class="text-uppercase"><code>Text-Uppercase</code></p>
+            <p class="text-capitalize"><code>text-capitalize</code></p>
+        </section>
+
+        <h2>Weight</h2>
+        <p>
+            Note: browsers will default to the nearest weight if the font does
+            not include the specified weight.
+        </p>
+        <section>
+            <p class="font-weight-thin"><code>font-weight-thin</code></p>
+            <p class="font-weight-light"><code>font-weight-light</code></p>
+            <p class="font-weight-regular"><code>font-weight-regular</code></p>
+            <p class="font-weight-medium"><code>font-weight-medium</code></p>
+            <p class="font-weight-bold"><code>font-weight-bold</code></p>
+            <p class="font-weight-black"><code>font-weight-black</code></p>
+        </section>
+
+        <hr />
+
+        <h1 id="utilities">Utilities</h1>
+
+        <h2>Display</h2>
+        <section>
+            <div class="w-30 h-50px m-20px display-inline">
+                <code>display-inline</code>
+            </div>
+            <div class="w-30 h-50px m-20px display-inline">
+                <code>display-inline</code>
+            </div>
+            <div class="w-30 h-50px m-20px display-block">
+                <code>display-block</code>
+            </div>
+            <div class="w-30 h-50px m-20px display-block">
+                <code>display-block</code>
+            </div>
+            <div class="w-30 h-50px m-20px display-inline-block">
+                <code>display-inline-block</code>
+            </div>
+            <div class="w-30 h-50px m-20px display-inline-block">
+                <code>display-inline-block</code>
+            </div>
+        </section>
+
+        <hr />
+
+        <a href="#top">back to top</a>
+    </body>
+</html>

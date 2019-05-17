@@ -3,6 +3,6 @@ $size: 0.25
 
 @while $name <= 12
     .font-size-#{$name}
-        font-size: "#{$size}em"
+        font-size: unquote($size + "em")
     $size: $size + 0.25
     $name: $name + 1
