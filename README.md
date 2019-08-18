@@ -13,7 +13,7 @@ Current Release (CDN):
 
 ## Documentation
 
-Documentation is coming soon, for now you can use this [file](docs/index.html) to learn how to use Baseframe.
+Documentation is coming soon, for now you can use [this](https://acekreations.github.io/baseframe/) to learn how to use Baseframe.
 
 ## Contribution
 
