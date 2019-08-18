@@ -13,7 +13,7 @@ Current Release (CDN):
 
 ## Documentation
 
-Documentation is coming soon, for now you can use the [examples.html](examples.html) file to learn how to use Baseframe.
+Documentation is coming soon, for now you can use this [file](docs/examples.html) to learn how to use Baseframe.
 
 ## Contribution
 
