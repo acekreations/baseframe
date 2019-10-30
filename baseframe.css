@@ -5446,4 +5446,36 @@
 
 .display-inline-block { display: inline-block; }
 
+.color-primary { color: #1e87f0 !important; }
+
+.color-success { color: #66CE9A; }
+
+.color-warning { color: #EFA367; }
+
+.color-danger { color: #E05C70; }
+
+.color-light { color: #eaeaea; }
+
+.color-dark { color: #424242; }
+
+.color-white { color: #ffffff; }
+
+.color-black { color: #000000; }
+
+.bg-primary { background: #1e87f0; }
+
+.bg-success { background: #66CE9A; }
+
+.bg-warning { background: #EFA367; }
+
+.bg-danger { background: #E05C70; }
+
+.bg-light { background: #eaeaea; }
+
+.bg-dark { background: #424242; }
+
+.bg-white { background: #ffffff; }
+
+.bg-black { background: #000000; }
+
 /*# sourceMappingURL=baseframe.css.map */
