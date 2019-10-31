@@ -9,7 +9,7 @@ Baseframe is a CSS library of the most commonly used CSS properties turned into 
 Baseframe can either be used via CDN or by downloading the [baseframe.min.css](baseframe.min.css) file.
 
 Current Release (CDN):
-`https://cdn.jsdelivr.net/gh/acekreations/baseframe@v0.2/baseframe.min.css`
+`https://cdn.jsdelivr.net/gh/acekreations/baseframe@v0.2.1/baseframe.min.css`
 
 ## Documentation
 
